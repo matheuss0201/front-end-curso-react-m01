@@ -1,0 +1,30 @@
+// 1. Classe Base (Pai)
+class Vehicle {
+  constructor(brand) {
+    this.brand = brand;
+  }
+
+  move() {
+    console.log(`O veículo da marca ${this.brand} está se movendo.`);
+  }
+}
+
+// 2. Subclasse Car que herda de Vehicle e sobrescreve o método move()
+class Car extends Vehicle {
+  move() {
+    console.log(`O carro da marca ${this.brand} está acelerando na rodovia! `);
+  }
+}
+
+// 3. Subclasse Bike que herda de Vehicle e sobrescreve o método move() com seu próprio comportamento
+class Bike extends Vehicle {
+  move() {
+    console.log(`A bicicleta da marca ${this.brand} está sendo pedalada na ciclovia! `);
+  }
+}
+
+const car = new Car ("BMW")
+const bike = new Bike("caloi")
+
+car.move()
+bike.move()
