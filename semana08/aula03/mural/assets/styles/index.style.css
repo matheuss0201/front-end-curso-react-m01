@@ -86,8 +86,8 @@ header button:hover {
 /* ⚠️ precisa vir DEPOIS de .filter-button: as duas pesam igual, e no empate
    ganha a última escrita. Suba este bloco e o botão ligado para de amarelar. */
 .filter-button.active {
-  background-color: #f2c14e;
-  border-color: #f2c14e;
+  background-color: #90f24e;
+  border-color: #53f24e;
   color: #2a2a2a;
 }
 
